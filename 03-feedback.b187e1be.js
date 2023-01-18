@@ -1,0 +1,2 @@
+const e=document.querySelector(".feedback-form"),t=document.querySelector(".feedback-form textarea");document.querySelector(".feedback-form input");t.addEventListener("input",(function(e){const t=e.target.value;console.log(t),localStorage.setItem("feedback-msg",t)})),e.addEventListener("input",(e=>{const{elements:{email:t,textarea:o}}=e.target;console.log(t)}));
+//# sourceMappingURL=03-feedback.b187e1be.js.map
