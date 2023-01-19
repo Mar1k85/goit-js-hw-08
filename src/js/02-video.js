@@ -10,4 +10,10 @@ const onPlay = ({ seconds }) => {
 
 player.on('timeupdate', throttle(onPlay, 1000));
 
-player.setCurrentTime(localStorage.getItem(CURRENT_PLAYER_TIME));
+// player.setCurrentTime(localStorage.getItem(CURRENT_PLAYER_TIME));
+function setTime() {
+  if (localStorage.getItem(CURRENT_PLAYER_TIME) !== null) {
+    player.setCurrentTime(localStorage.getItem(CURRENT_PLAYER_TIME));
+  }
+}
+setTime();
